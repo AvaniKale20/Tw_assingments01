@@ -1,5 +1,7 @@
 package com.thoughtworks.bootcamp;
 
+import java.util.List;
+
 public class Friends {
 
     private String name;
@@ -15,6 +17,12 @@ public class Friends {
 
 
     public double calculateExpensesForEachFriend() {
+
         return 0.0;
+
+    }
+    public double expensesForTwoFriends()
+    {
+        return amountGiven/2;
     }
 }
