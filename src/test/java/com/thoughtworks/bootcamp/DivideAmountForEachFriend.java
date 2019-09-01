@@ -19,30 +19,32 @@ public class DivideAmountForEachFriend {
     @Test
     void givenHundredAmountForFourFriends_WhenPaid_ThenReturnTwentyFive() {
 
-        String name = "Demon";
-        double amountToGive = 0.0;
-        double amountGiven = 100;
-        Friends forFourPerson = new Friends(name, amountToGive, amountGiven);
+        Friends forFourPerson = new Friends("Demon", 0.0, 100.0);
         Assertions.assertEquals(25.0, forFourPerson.calculateExpensesForEachFriend());
     }
 
     @Test
     void givenZeroAmountByPerson2ForTwoFriends_WhenPaid_ThenReturnZero() {
-
-        String name = "Demon";
-        double amountToGive = 0.0;
-        double amountGiven = 0.0;
-        Friends forTwoPerson = new Friends(name, amountToGive, amountGiven);
+        Friends forTwoPerson = new Friends("Demon", 0.0, 0.0);
         Assertions.assertEquals(0.0, forTwoPerson.expensesForTwoFriends());
     }
 
     @Test
     void givenTenAmountByPerson2ForTwoFriends_WhenPaid_ThenReturnFiveForEach() {
-        String name = "Demon";
-        double amountToGive = 0.0;
-        double amountGiven = 10.0;
-        Friends forTwoPerson = new Friends(name, amountToGive, amountGiven);
+        Friends forTwoPerson = new Friends("Demon", 0.0, 10.0);
         Assertions.assertEquals(05.0, forTwoPerson.expensesForTwoFriends());
+    }
+
+    @Test
+    void givenThreeHundredAmountByPerason2ForTwoFriends_WhenPaid_ThenReturnOneFiftyForEach() {
+        Friends forTwoPerson = new Friends("Demon", 0.0, 300.0);
+        Assertions.assertEquals(150.0, forTwoPerson.expensesForTwoFriends());
+    }
+
+    @Test
+    void givenFiveHundredAmountByPerason2ForTwoFriends_WhenPaid_ThenReturnTwoFiftyForEach() {
+        Friends forTwoPerson = new Friends("Demon", 0.0, 500.0);
+        Assertions.assertEquals(250.0, forTwoPerson.expensesForTwoFriends());
     }
 
 
