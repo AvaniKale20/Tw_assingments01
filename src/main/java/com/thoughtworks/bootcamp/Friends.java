@@ -10,11 +10,13 @@ public class Friends {
     List<String> listOfPepleInvolve = new ArrayList<String>();
     private double amountGiven;
 
+
     public Friends(String name, List<String> listOfPepleInvolve, double amountGiven) {
         this.name = name;
         this.listOfPepleInvolve = listOfPepleInvolve;
         this.amountGiven = amountGiven;
     }
+
 
     public double calculateExpensesForEachFriend() {
         double DividedIntoFriends = listOfPepleInvolve.size();
@@ -25,4 +27,6 @@ public class Friends {
     public double calculateExpenses() {
         return 0.0;
     }
+
+
 }

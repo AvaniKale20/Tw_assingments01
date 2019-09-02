@@ -9,10 +9,11 @@ import java.util.List;
 public class DivideAmountForEachFriend {
 
     private List<String> listOfPepleInvolve = new ArrayList<String>();
+    private List<Integer> listOfAmount = new ArrayList<Integer>();
 
 
     @Test
-    void givenZeroAmountForZeroFriends_WhenPaid_ThenReturnZero() {
+    void givenZeroAmountForZeroFriends_Whenadded_ThenReturnZero() {
 
         List<String> listOfPepleInvolve = new ArrayList<String>();
         Friends friends = new Friends("Stefon", listOfPepleInvolve, 0.0);
@@ -20,7 +21,7 @@ public class DivideAmountForEachFriend {
     }
 
     @Test
-    void givenHundredAmountForFourFriends_WhenPaid_ThenReturnTwentyFive() {
+    void givenHundredAmountForFourFriends_WhenAdded_ThenReturnTwentyFive() {
 
         listOfPepleInvolve.add("Aman");
         listOfPepleInvolve.add("Bella");
@@ -31,7 +32,7 @@ public class DivideAmountForEachFriend {
     }
 
     @Test
-    void givenZeroAmountByPerson2ForTwoFriends_WhenPaid_ThenReturnZero() {
+    void givenZeroAmountByPerson2ForTwoFriends_WhenAdded_ThenReturnZero() {
 
         listOfPepleInvolve.add("Stefon");
         listOfPepleInvolve.add("Demon");
@@ -40,7 +41,7 @@ public class DivideAmountForEachFriend {
     }
 
     @Test
-    void givenTenAmountByPerson2ForTwoFriends_WhenPaid_ThenReturnFiveForEach() {
+    void givenTenAmountByPerson2ForTwoFriends_WhenAdded_ThenReturnFiveForEach() {
 
         listOfPepleInvolve.add("Stefon");
         listOfPepleInvolve.add("Demon");
@@ -49,7 +50,7 @@ public class DivideAmountForEachFriend {
     }
 
     @Test
-    void givenThreeHundredAmountByPerason2ForTwoFriends_WhenPaid_ThenReturnTwoFiftyForEach() {
+    void givenThreeHundredAmountByPerason2ForTwoFriends_WhenAdded_ThenReturnTwoFiftyForEach() {
 
         listOfPepleInvolve.add("Stefon");
         listOfPepleInvolve.add("Demon");
@@ -58,7 +59,7 @@ public class DivideAmountForEachFriend {
     }
 
     @Test
-    void givenFiveHundredAmountByPerason2ForTwoFriends_WhenPaid_ThenReturnOneFiftyForEach() {
+    void givenFiveHundredAmountByPerason2ForTwoFriends_WhenAdded_ThenReturnOneFiftyForEach() {
 
         listOfPepleInvolve.add("Aman");
         listOfPepleInvolve.add("Bella");
