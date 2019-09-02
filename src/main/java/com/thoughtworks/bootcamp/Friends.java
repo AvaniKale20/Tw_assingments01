@@ -4,6 +4,7 @@ package com.thoughtworks.bootcamp;
 import java.util.ArrayList;
 import java.util.List;
 
+//This class having state like name, list of People Involve, AmountGiven And Constructor , behaviour.
 public class Friends {
 
     private String name;
