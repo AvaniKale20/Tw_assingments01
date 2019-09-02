@@ -1,26 +1,28 @@
 package com.thoughtworks.bootcamp;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Friends {
 
     private String name;
-    private double amountToGive;
+    List<String> listOfPepleInvolve = new ArrayList<String>();
     private double amountGiven;
 
-    public Friends(String name, double amountToGive, double amountGiven) {
+    public Friends(String name, List<String> listOfPepleInvolve, double amountGiven) {
         this.name = name;
-        this.amountToGive = amountToGive;
+        this.listOfPepleInvolve = listOfPepleInvolve;
         this.amountGiven = amountGiven;
     }
 
     public double calculateExpensesForEachFriend() {
-
-        return amountGiven / 4;
-
+        double DividedIntoFriends = listOfPepleInvolve.size();
+        return amountGiven / DividedIntoFriends;
     }
 
-    public double expensesForTwoFriends() {
-        return amountGiven / 2;
 
+    public double calculateExpenses() {
+        return 0.0;
     }
 }
